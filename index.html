@@ -228,8 +228,8 @@
         }
 
         .drink-card {
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%);
-            border: 1px solid rgba(139, 92, 246, 0.3);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
+            border: 2px solid rgba(139, 92, 246, 0.4);
             padding: 2.5rem;
             border-radius: 10px;
             position: relative;
@@ -297,6 +297,16 @@
         .info-card {
             text-align: center;
             padding: 2rem;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%);
+            border: 2px solid rgba(139, 92, 246, 0.5);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .info-card:hover {
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.35) 0%, rgba(139, 92, 246, 0.35) 100%);
+            border-color: rgba(139, 92, 246, 0.7);
+            box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3);
         }
 
         .info-icon {
@@ -519,6 +529,11 @@
                 <h3 class="drink-name">Velvet Night</h3>
                 <p class="drink-description">Black vodka, blackberry liqueur, cola and lime wedge</p>
             </div>
+
+            <div class="drink-card reveal">
+                <h3 class="drink-name">Midnight Bliss</h3>
+                <p class="drink-description">Rum, passion fruit liqueur, fresh lime juice and soda water</p>
+            </div>
         </div>
 
         <!-- Non-Alcoholic Drinks -->
@@ -548,45 +563,70 @@
                 <h3 class="drink-name">Electric Lemonade</h3>
                 <p class="drink-description">Fresh lemonade, blue raspberry syrup, sprite and ice</p>
             </div>
+
+            <div class="drink-card reveal">
+                <h3 class="drink-name">Mystic Berry</h3>
+                <p class="drink-description">Mixed berry juice, blackberry syrup, sparkling water and fresh berries</p>
+            </div>
         </div>
 
         <!-- Special Menu Items -->
-        <div style="max-width: 800px; margin: 4rem auto; padding: 2.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 15px; text-align: center;">
+        <div style="max-width: 800px; margin: 4rem auto; padding: 2.5rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.25) 0%, rgba(59, 130, 246, 0.25) 100%); border: 2px solid rgba(139, 92, 246, 0.5); border-radius: 15px; text-align: center;">
             <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--light-blue); margin-bottom: 1.5rem;">Special Offerings</h3>
             <p style="color: var(--white); line-height: 1.8; margin-bottom: 1rem; font-size: 1.05rem;"><strong style="color: var(--purple);">OTHER DRINKS:</strong> Bubble Tea, Variety of fruit cocktails, Custom drinks, Bartender Specials</p>
-            <p style="color: var(--white); line-height: 1.8; font-size: 1.05rem; background: rgba(139, 92, 246, 0.2); padding: 1rem; border-radius: 8px; margin-top: 1.5rem;"><strong style="color: var(--light-blue); font-size: 1.1rem;">MAID SPECIALITY:</strong> Ask any of our maids for their secret special menu item</p>
+            <p style="color: var(--white); line-height: 1.8; font-size: 1.05rem; background: rgba(139, 92, 246, 0.3); padding: 1rem; border-radius: 8px; margin-top: 1.5rem; border: 1px solid rgba(139, 92, 246, 0.4);"><strong style="color: var(--light-blue); font-size: 1.1rem;">MAID SPECIALITY:</strong> Ask any of our maids for their secret special menu item</p>
         </div>
     </section>
 
-    <!-- DJ's Section -->
+        <!-- DJ's Section -->
     <section id="djs">
         <h2 class="section-title">Our DJ's</h2>
         <p class="section-subtitle">The sound masters of tonight</p>
         
         <div class="info-grid">
             <div class="info-card reveal">
-                <div class="info-icon">🎧</div>
+                <div class="info-icon" style="font-size: 2.5rem;">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" style="color: var(--light-blue);">
+                        <path d="M11 2v7H8l6 6v-6h3V2h-6zm6 7v4l3-2-3-2z"/>
+                        <rect x="2" y="13" width="20" height="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
                 <h3>Yams</h3>
                 <p style="font-size: 1.3rem; font-weight: 700; color: var(--purple); margin: 1rem 0; letter-spacing: 0.05em;">18:00 - 19:00 ST</p>
                 <p><a href="https://www.twitch.tv/djayyams" target="_blank" style="color: var(--light-blue); text-decoration: none; transition: color 0.3s;">https://www.twitch.tv/djayyams</a></p>
             </div>
 
             <div class="info-card reveal">
-                <div class="info-icon">🎧</div>
+                <div class="info-icon" style="font-size: 2.5rem;">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" style="color: var(--light-blue);">
+                        <path d="M11 2v7H8l6 6v-6h3V2h-6zm6 7v4l3-2-3-2z"/>
+                        <rect x="2" y="13" width="20" height="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
                 <h3>Khangomon</h3>
                 <p style="font-size: 1.3rem; font-weight: 700; color: var(--purple); margin: 1rem 0; letter-spacing: 0.05em;">19:00 - 20:00 ST</p>
                 <p><a href="https://www.twitch.tv/khangomon" target="_blank" style="color: var(--light-blue); text-decoration: none; transition: color 0.3s;">https://www.twitch.tv/khangomon</a></p>
             </div>
 
             <div class="info-card reveal">
-                <div class="info-icon">🎧</div>
+                <div class="info-icon" style="font-size: 2.5rem;">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" style="color: var(--light-blue);">
+                        <path d="M11 2v7H8l6 6v-6h3V2h-6zm6 7v4l3-2-3-2z"/>
+                        <rect x="2" y="13" width="20" height="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
                 <h3>Raindrop</h3>
                 <p style="font-size: 1.3rem; font-weight: 700; color: var(--purple); margin: 1rem 0; letter-spacing: 0.05em;">20:00 - 22:00 ST</p>
                 <p><a href="https://www.twitch.tv/raindropkitty" target="_blank" style="color: var(--light-blue); text-decoration: none; transition: color 0.3s;">https://www.twitch.tv/raindropkitty</a></p>
             </div>
 
             <div class="info-card reveal">
-                <div class="info-icon">🎧</div>
+                <div class="info-icon" style="font-size: 2.5rem;">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="currentColor" style="color: var(--light-blue);">
+                        <path d="M11 2v7H8l6 6v-6h3V2h-6zm6 7v4l3-2-3-2z"/>
+                        <rect x="2" y="13" width="20" height="9" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
                 <h3>Hazie</h3>
                 <p style="font-size: 1.3rem; font-weight: 700; color: var(--purple); margin: 1rem 0; letter-spacing: 0.05em;">22:00 - 00:00 ST</p>
                 <p><a href="https://www.twitch.tv/dj_hazie" target="_blank" style="color: var(--light-blue); text-decoration: none; transition: color 0.3s;">https://www.twitch.tv/dj_hazie</a></p>
@@ -623,7 +663,7 @@
         <h2 class="section-title">Passion EU</h2>
         <p class="section-subtitle">Our Partner Club by the Beach</p>
         
-        <div style="max-width: 900px; margin: 3rem auto; padding: 3rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.15) 100%); border: 2px solid rgba(139, 92, 246, 0.4); border-radius: 15px;">
+        <div style="max-width: 900px; margin: 3rem auto; padding: 3rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.25) 100%); border: 2px solid rgba(139, 92, 246, 0.5); border-radius: 15px;">
             
             <h3 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--light-blue); text-align: center; margin-bottom: 2rem;">Passion by the Beach: Where Rhythms Meet Waves</h3>
             
