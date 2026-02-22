@@ -237,6 +237,16 @@
             overflow: hidden;
         }
 
+        .drink-card::after {
+            content: '🍸';
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 2rem;
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
         .drink-card::before {
             content: '';
             position: absolute;
@@ -371,6 +381,40 @@
         /* Info Section */
         #info {
             background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, transparent 100%);
+        }
+
+        #menu {
+            position: relative;
+        }
+
+        #menu::before {
+            content: '🍹 🍸 🍷 🍹 🍸 🍷 🍹 🍸 🍷';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            opacity: 0.35;
+            letter-spacing: 1rem;
+            white-space: nowrap;
+            width: 100%;
+            text-align: center;
+            pointer-events: none;
+        }
+
+        #menu::after {
+            content: '🍹 🍸 🍷 🍹 🍸 🍷 🍹 🍸 🍷';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            opacity: 0.35;
+            letter-spacing: 1rem;
+            white-space: nowrap;
+            width: 100%;
+            text-align: center;
+            pointer-events: none;
         }
 
         .info-grid {
@@ -613,33 +657,33 @@
         <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--light-blue); text-align: center; margin: 3rem 0 2rem 0;">Alcoholic Drinks</h3>
         <div class="drinks-grid">
             <div class="drink-card reveal">
-                <h3 class="drink-name">Electric Dream</h3>
-                <p class="drink-description">Blue curaçao, vodka, lemonade and a splash of sprite</p>
+                <h3 class="drink-name">Enchanted Wings</h3>
+                <p class="drink-description">Blue curaçao, elderflower gin, sparkling wine and fairy dust shimmer</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Purple Haze</h3>
-                <p class="drink-description">Gin, crème de violette, champagne and fresh lemon juice</p>
+                <h3 class="drink-name">Pixie's Kiss</h3>
+                <p class="drink-description">Violet liqueur, vodka, rose water and champagne whisper</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Neon Nights</h3>
-                <p class="drink-description">Tequila, blue curaçao, pineapple juice and coconut cream</p>
+                <h3 class="drink-name">Moonlit Grove</h3>
+                <p class="drink-description">Tequila, elderberry liqueur, lime juice and mystical mist</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Crystal Poison</h3>
-                <p class="drink-description">White rum, elderflower liqueur, lime juice and mint leaves</p>
+                <h3 class="drink-name">Fae Potion</h3>
+                <p class="drink-description">White rum, lavender liqueur, butterfly pea flower and soda charm</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Velvet Night</h3>
-                <p class="drink-description">Black vodka, blackberry liqueur, cola and lime wedge</p>
+                <h3 class="drink-name">Twilight Spell</h3>
+                <p class="drink-description">Dark rum, blackberry liqueur, violet syrup and enchanted sparkle</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Midnight Bliss</h3>
-                <p class="drink-description">Rum, passion fruit liqueur, fresh lime juice and soda water</p>
+                <h3 class="drink-name">Ethereal Dreams</h3>
+                <p class="drink-description">Gin, passion fruit liqueur, fresh lemon and celestial shimmer</p>
             </div>
         </div>
 
@@ -647,33 +691,33 @@
         <h3 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; color: var(--purple); text-align: center; margin: 4rem 0 2rem 0;">Non-Alcoholic Drinks</h3>
         <div class="drinks-grid">
             <div class="drink-card reveal">
-                <h3 class="drink-name">Blue Lagoon</h3>
-                <p class="drink-description">Blue curaçao syrup, lemonade, sprite and lemon slice</p>
+                <h3 class="drink-name">Fairy Dust Fizz</h3>
+                <p class="drink-description">Blue syrup, lemonade, sprite and shimmering star dust</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Tropical Storm</h3>
-                <p class="drink-description">Passion fruit juice, orange juice, coconut cream and pineapple</p>
+                <h3 class="drink-name">Woodland Nectar</h3>
+                <p class="drink-description">Passion fruit juice, orange juice, coconut cream and forest herbs</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Purple Rain</h3>
-                <p class="drink-description">Grape juice, blueberry syrup, soda water and fresh mint</p>
+                <h3 class="drink-name">Enchanted Aurora</h3>
+                <p class="drink-description">Grape juice, blueberry syrup, soda water and mystical sparkle</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Sunset Glow</h3>
-                <p class="drink-description">Orange juice, grenadine, peach nectar and lime juice</p>
+                <h3 class="drink-name">Sunset in Faeryland</h3>
+                <p class="drink-description">Orange juice, grenadine, peach nectar and magical glow</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Electric Lemonade</h3>
-                <p class="drink-description">Fresh lemonade, blue raspberry syrup, sprite and ice</p>
+                <h3 class="drink-name">Moonbeam Elixir</h3>
+                <p class="drink-description">Fresh lemonade, blue raspberry syrup, sprite and celestial ice</p>
             </div>
 
             <div class="drink-card reveal">
-                <h3 class="drink-name">Mystic Berry</h3>
-                <p class="drink-description">Mixed berry juice, blackberry syrup, sparkling water and fresh berries</p>
+                <h3 class="drink-name">Enchanted Berries</h3>
+                <p class="drink-description">Mixed berry juice, blackberry syrup, sparkling water and fae magic</p>
             </div>
         </div>
 
